@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		body {
+			background-image: url(img/1.4.jpg);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			opacity: 0.9;
+
+		}
+
+		#body {
+			position: relative;
+			top: 60px;
+			left: 2%;
+			width: 96%;
+			height: 675px;
+			display: flexbox;
+			overflow: hidden;
+			overflow: auto;
+			background-color: red;
+			border-radius: 40px;
+			z-index: 2;
+		}
+		#deng{
+			border-left: 1px solid black;
+			border-right: 1px solid black;
+			box-shadow: 0px 0px 10px 10px #00ff7f;
+			width: 800px;
+			height: 400px;
+			position: absolute;
+			right: 100px;
+			top: 75px;
+			border-radius: 50px;
+		}
+		.denglu{
+			border: 1px solid black;
+			box-shadow: 3px 3px 5px 2px #00FFFF;
+			border-radius: 20px;
+			width: 350px;
+			height: 200px;
+			position: absolute;
+			top: 100px;
+			left:220px ;
+			padding-left: 10px;
+		}
+		#body img{
+			width: 300px;
+			height: 450px;
+			position: absolute;
+			left: 75px;
+			top: 50px;
+			border-radius: 20px;
+			box-shadow: 1px 1px 2px 5px #000000;
+		}
+		#body img:hover{
+			border: 5px solid black;
+			transition: boder;
+			transition: 0.5s;
+		}
+		input{
+			margin-top: 10px;
+			border-radius: 20px;
+		}
+		#input_text{
+			margin-top: 20px;
+		}
+		#input_text,#input_passWord{
+			width:200px ;
+			height: 30px;
+			line-height: 30px;
+		}
+		#input_email{
+			width: 150px;
+			height: 30px;
+			line-height: 30px;
+		}
+		#input_submit{
+			width: 150px;
+			position: absolute;
+			bottom: 1.25rem;
+			left: 95px;
+		}
+	</style>
+	<link rel="stylesheet" href="public.css" />
+	<body>
+		<div id="float_top">
+			<!-- 上悬浮 -->
+		</div>
+		<div id="float_bottom">
+			<!-- 下悬浮 -->
+			版权_&copy;TangZhiYu所有
+		</div>
+		<div id="float_left">
+			<!-- 左悬浮 -->
+			>
+			< <div>
+					<a href="">回到顶部</a>
+					<a href="">反馈</a>
+					<a href="">下载</a>
+					<a href="">客服</a>
+					<a href="">回到底部</a>
+			</div>
+		</div>
+		<div id="float_right">
+			<!-- 右悬浮 -->
+			< <div>
+				<a href="">回到顶部</a>
+				<a href="">反馈</a>
+				<a href="">下载</a>
+				<a href="">客服</a>
+				<a href="">回到底部</a>
+		</div>
+		</div>
+		<!-- 定义导航栏 -->
+		<div id="headerNav">
+			<div id="headerNav1"></div>
+			<div id="headerNav2">
+
+				<div class="nav1">
+
+					<div>
+						<a href="yemian1_Start.html">首页</a>
+						<a href="yemian2LiShi.html">历史</a>
+						<a href="yemian3XiSu.html">习俗</a>
+						<a href="https://baike.baidu.com/item/%E6%98%A5%E8%8A%82%E7%B2%BE%E7%A5%9E/12652051">精神</a>
+						<a href="https://www.diyifanwen.com/fanwen/chunjie/17665313.html">故事</a>
+					</div>
+
+				</div>
+
+				<div class="nav2">
+
+					<div>
+						<a href="">资源</a>
+						<a href="https://www.bilibili.com/video/BV1pw411h7wn?t=10.7">荧光舞</a>
+						<a href="https://www.bilibili.com/video/BV11h4y1i7K6?t=2.1">财神到</a>
+						<a href="https://www.bilibili.com/video/BV1XkSoYLEKg?t=1.8">花间梦</a>
+						<a href="https://www.bilibili.com/video/BV1Rr4y1S7yw?t=1.1">预选舞蹈</a>
+					</div>
+
+				</div>
+
+				<div class="nav3">
+				
+					<div>
+						<a href="">招聘中心</a>
+					</div>
+				
+				</div>
+				
+				<div class="nav4">
+				
+					<div>
+						<a href="">官网</a>
+					</div>
+				
+				</div>
+
+				<div class="nav5">
+
+					<div>
+						<a href="">个人中心</a>
+						<a href="yemian4denglu.html">登录</a>
+						<a href="yemian5zhuce.html">注册</a>
+						<a href="">帮助</a>
+						<a href="">反馈</a>
+					</div>
+
+				</div>
+
+				<div class="nav6">
+
+					<div>
+
+					</div>
+
+				</div>
+
+
+
+			</div>
+
+
+			<div id="body">
+				<img src="img/4.3.jpeg" >
+				<div id="deng">
+					<form action="" method="post" class="denglu">
+						numPhone:<input type="tel" placeholder="请输入手机号" id="input_text"/><br>
+									e&nbsp;m&nbsp;a&nbsp;i&nbsp;l&nbsp;:&nbsp;&nbsp;<input type="email" name="" id="input_email"  placeholder="请输入邮件" />@qq.com<br>
+									Password:<input type="password" name="" id="input_passWord" placeholder="请输入新的密码" /><br>
+						<input type="button" value="注册" id="input_submit"/>
+					</form>
+				</div>
+			</div>
+	</body>
+</html>

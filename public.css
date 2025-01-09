@@ -1,0 +1,529 @@
+/* 定义body样式,并去除内外边距 */
+body {
+	margin: 0rem;
+	padding: 0rem;
+	overflow: hidden;
+}
+
+
+
+/*上悬浮定义*/
+#float_top {
+	width: 98%;
+	height: 15px;
+	position: absolute;
+	top: 0px;
+	left: 1%;
+	border-radius: 0px 0px 100px 100px;
+	background-color: red;
+	background-attachment: fixed;
+	border: 1px solid black;
+	z-index: 4;
+	display: flex;
+}
+
+
+
+/*下悬浮定位*/
+#float_bottom {
+	width: 98%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;
+	left: 1%;
+	border-radius: 100px 100px 0px 0px;
+	background-color: red;
+	background-attachment: fixed;
+	border: 1px solid black;
+	z-index: 4;
+	display: flex;
+	overflow: hidden;
+	text-align: center;
+	padding-left: 600px;
+}
+
+
+
+/*左悬浮定位*/
+#float_left {
+	width: 15px;
+	height: 500px;
+	line-height: 500px;
+	position: absolute;
+	top: 100px;
+	left: 0%;
+	border-radius: 0px 100px 100px 0px;
+	background-color: red;
+	background-attachment: fixed;
+	border: 1px solid black;
+	z-index: 4;
+	display: flex;
+	overflow: hidden;
+}
+
+#float_left:hover {
+	background-color: red;
+	overflow: visible;
+}
+
+/*左悬浮浮窗*/
+#float_left div {
+	width: 80px;
+	height: 450px;
+	position: absolute;
+	top: 25px;
+	border-radius: 0px 20px 20px 0px;
+	background-color: red;
+	opacity: 0.9;
+}
+
+#float_left div a {
+	position: absolute;
+	width: 65px;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	box-shadow: 0px 0px 10px 5px #b7b714 inset;
+}
+
+#float_left div a:hover {
+	background-color: aqua;
+}
+
+#float_left div a:nth-child(1) {
+	left: 15px;
+	top: 0px;
+	border-radius: 0px 20px 0px 0px;
+}
+
+#float_left div a:nth-child(2) {
+	left: 15px;
+	top: 90px;
+}
+
+#float_left div a:nth-child(3) {
+	left: 15px;
+	top: 180px;
+}
+
+#float_left div a:nth-child(4) {
+	left: 15px;
+	top: 270px;
+}
+
+#float_left div a:nth-child(5) {
+	left: 15px;
+	top: 360px;
+	border-radius: 0px 0px 20px 0px;
+}
+
+
+/*右悬浮定位*/
+#float_right {
+	width: 15px;
+	height: 500px;
+	line-height: 500px;
+	position: absolute;
+	top: 100px;
+	right: 0%;
+	border-radius: 100px 0px 0px 100px;
+	background-color: red;
+	background-attachment: fixed;
+	border: 1px solid black;
+	z-index: 4;
+	display: flex;
+	overflow: hidden;
+}
+
+#float_right:hover {
+	background-color: red;
+	overflow: visible;
+}
+
+/*右悬浮浮窗*/
+#float_right div {
+	width: 80px;
+	height: 450px;
+	position: absolute;
+	right: 0px;
+	top: 25px;
+	border-radius: 20px 0px 0px 20px;
+	background-color: red;
+	opacity: 0.9;
+}
+
+#float_right div a {
+	position: absolute;
+	width: 65px;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	box-shadow: 0px 0px 10px 5px #b7b714 inset;
+}
+
+#float_right div a:hover {
+	background-color: aqua;
+}
+
+#float_right div a:nth-child(1) {
+	right: 15px;
+	top: 0px;
+	border-radius: 20px 0px 0px 0px;
+}
+
+#float_right div a:nth-child(2) {
+	right: 15px;
+	top: 90px;
+}
+
+#float_right div a:nth-child(3) {
+	right: 15px;
+	top: 180px;
+}
+
+#float_right div a:nth-child(4) {
+	right: 15px;
+	top: 270px;
+}
+
+#float_right div a:nth-child(5) {
+	right: 15px;
+	top: 360px;
+	border-radius: 0px 0px 0px 20px;
+}
+
+
+
+
+/*一， 定义导航栏宽高 */
+#headerNav {
+	width: 100%;
+	height: 50px;
+	background-color: #997d0c;
+	position: absolute;
+	top: 20px;
+	border-radius: 100px 30px 100px 30px;
+}
+
+
+
+/* 一，定义导航栏内分间,并分别定义样式 */
+#headerNav1 {
+	width: 40%;
+	height: 50px;
+	border: 1px solid black;
+	position: absolute;
+	left: 0px;
+	background-image: url(img/1.1.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border-radius: 100px 30px 100px 30px;
+}
+
+#headerNav2 {
+	width: 60%;
+	height: 50px;
+	border: 1px solid black;
+	position: absolute;
+	right: 0px;
+	background-image: url(img/1.1.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border-radius: 135px 30px 100px 0px;
+}
+
+#headerNav div {
+	margin: 0rem;
+	padding: 0rem;
+}
+
+
+
+/*一，定义导航栏div样式*/
+.nav2,
+.nav3,
+.nav4 {
+	width: 120px;
+	height: 50px;
+	border: 1px solid black;
+	overflow: hidden;
+}
+
+.nav5,
+.nav1 {
+	width: 120px;
+	height: 50px;
+	overflow: hidden;
+}
+
+.nav1:hover,
+.nav2:hover,
+.nav3:hover,
+.nav4:hover,
+.nav5:hover {
+	overflow: visible;
+}
+
+.nav2 div,
+.nav3 div,
+.nav4 div,
+{
+position: absolute;
+width: 120px;
+height: 250px;
+border: 1px solid black;
+border-radius: 0px 0px 10px 10px;
+z-index: 3;
+}
+
+nav5 div {
+	position: absolute;
+	width: 120px;
+	height: 250px;
+	border-radius: 0px 0px 10px 10px;
+	z-index: 3;
+}
+
+.nav1 div {
+	position: absolute;
+	width: 120px;
+	height: 250px;
+	border-radius: 50px 0px 50px 10px;
+	z-index: 3;
+}
+
+.nav1 div a,
+.nav2 div a,
+.nav3 div a,
+.nav4 div a,
+.nav5 div a {
+	text-decoration: none;
+	width: 120px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	z-index: 4;
+}
+
+
+
+/*定义第一行导航栏定位*/
+.nav1 {
+	position: absolute;
+	left: 0px;
+	border-radius: 100px 0px 0px 0px;
+}
+
+.nav2 {
+	position: absolute;
+	left: 120px;
+}
+
+.nav3 {
+	position: absolute;
+	left: 240px;
+}
+
+.nav4 {
+	position: absolute;
+	left: 360px;
+}
+
+.nav5 {
+	position: absolute;
+	left: 480px;
+
+}
+
+.nav6 {
+	position: absolute;
+	left: 600px;
+	border-radius: 0px 100px 0px 0px;
+}
+
+/*第一行导航栏*/
+.nav1 div a:nth-child(1),
+.nav6 div a:nth-child(1),
+.nav2 div a:nth-child(1),
+.nav3 div a:nth-child(1),
+.nav4 div a:nth-child(1),
+.nav5 div a:nth-child(1) {
+	background-image: url(img/1.2.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.nav2 div a:nth-child(1),
+.nav3 div a:nth-child(1),
+.nav4 div a:nth-child(1) {
+	font-size: 18px;
+	font-family: "微软雅黑";
+	color: black;
+	font-weight: bolder;
+	position: absolute;
+	top: 0px;
+}
+
+.nav1 div a:nth-child(1),
+.nav5 div a:nth-child(1) {
+	font-size: 18px;
+	font-family: "微软雅黑";
+	color: black;
+	font-weight: bolder;
+	position: absolute;
+	top: 0px;
+}
+
+.nav1 div a:nth-child(1) {
+	border-radius: 135px 0px 0px 0px;
+}
+
+.nav5 div a:nth-child(1) {
+	border-radius: 0px 135px 0px 0px;
+	z-index: 4;
+}
+
+
+
+
+/*第二行导航栏*/
+.nav1 div a:nth-child(2),
+.nav2 div a:nth-child(2),
+.nav3 div a:nth-child(2),
+.nav4 div a:nth-child(2),
+.nav5 div a:nth-child(2),
+.nav6 div a:nth-child(2) {
+	position: absolute;
+	top: 50px;
+	box-shadow: 0px 0px 10px 5px #b7b714 inset;
+	background-color: red;
+	opacity: 0.8;
+}
+
+.nav1 div a:nth-child(2):hover,
+.nav2 div a:nth-child(2):hover,
+.nav3 div a:nth-child(2):hover,
+.nav4 div a:nth-child(2):hover,
+.nav5 div a:nth-child(2):hover,
+.nav6 div a:nth-child(2):hover {
+	padding: 3px 0px 3px 0px;
+	background-color: aquamarine;
+	border-radius: 10px 10px 10px 10px;
+}
+
+
+
+/*第三行导航栏*/
+.nav1 div a:nth-child(3),
+.nav2 div a:nth-child(3),
+.nav3 div a:nth-child(3),
+.nav4 div a:nth-child(3),
+.nav5 div a:nth-child(3),
+.nav6 div a:nth-child(3) {
+	position: absolute;
+	top: 100px;
+	box-shadow: 0px 0px 10px 5px #b7b714 inset;
+	background-color: red;
+	opacity: 0.8;
+}
+
+.nav1 div a:nth-child(3):hover,
+.nav2 div a:nth-child(3):hover,
+.nav3 div a:nth-child(3):hover,
+.nav4 div a:nth-child(3):hover,
+.nav5 div a:nth-child(3):hover,
+.nav6 div a:nth-child(3):hover {
+	padding: 3px 0px 3px 0px;
+	background-color: aquamarine;
+	border-radius: 10px 10px 10px 10px;
+}
+
+
+
+/*第四行导航栏*/
+.nav1 div a:nth-child(4),
+.nav2 div a:nth-child(4),
+.nav3 div a:nth-child(4),
+.nav4 div a:nth-child(4),
+.nav5 div a:nth-child(4),
+.nav6 div a:nth-child(4) {
+	position: absolute;
+	top: 150px;
+	box-shadow: 0px 0px 10px 5px #b7b714 inset;
+	background-color: red;
+	opacity: 0.8;
+}
+
+.nav1 div a:nth-child(4):hover,
+.nav2 div a:nth-child(4):hover,
+.nav3 div a:nth-child(4):hover,
+.nav4 div a:nth-child(4):hover,
+.nav5 div a:nth-child(4):hover,
+.nav6 div a:nth-child(4):hover {
+	padding: 3px 0px 3px 0px;
+	background-color: aquamarine;
+	border-radius: 10px 10px 10px 10px;
+}
+
+
+
+/*第五行导航栏*/
+.nav1 div a:nth-child(5),
+.nav2 div a:nth-child(5),
+.nav3 div a:nth-child(5),
+.nav4 div a:nth-child(5),
+.nav5 div a:nth-child(5),
+.nav6 div a:nth-child(5) {
+	position: absolute;
+	top: 200px;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.nav2 div a:nth-child(5),
+.nav3 div a:nth-child(5),
+.nav4 div a:nth-child(5) {
+	box-shadow: 0px 0px 10px 5px #b7b714 inset;
+	background-color: red;
+	opacity: 0.8;
+}
+
+.nav2 div a:nth-child(5):hover,
+.nav3 div a:nth-child(5):hover,
+.nav4 div a:nth-child(5):hover {
+	padding: 3px 0px 3px 0px;
+	background-color: aquamarine;
+}
+
+.nav1 div a:nth-child(5) {
+	box-shadow: 0px 0px 10px 5px #b7b714 inset;
+	background-color: red;
+	opacity: 0.8;
+	border-radius: 0px 0px 50px 10px;
+}
+
+.nav5 div a:nth-child(5) {
+	box-shadow: 0px 0px 10px 5px #b7b714 inset;
+	background-color: red;
+	opacity: 0.8;
+	border-radius: 0px 0px 10px 50px;
+}
+
+.nav1 div a:nth-child(5):hover {
+	padding: 3px 0px 3px 0px;
+	background-color: aquamarine;
+	border-radius: 0px 0px 50px 10px;
+
+}
+
+.nav5 div a:nth-child(5):hover {
+	padding: 3px 0px 3px 0px;
+	background-color: aquamarine;
+	border-radius: 0px 0px 10px 50px;
+
+}

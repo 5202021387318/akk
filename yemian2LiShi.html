@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		body {
+			background-image: url(img/1.4.jpg);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			opacity: 0.9;
+
+		}
+
+		#body {
+			position: relative;
+			top: 60px;
+			left: 2%;
+			width: 96%;
+			height: 675px;
+			display: flexbox;
+			overflow: hidden;
+			overflow: auto;
+			background-color: white;
+			border-radius: 40px;
+			z-index: 2;
+		}
+
+		/* 定义开头标题 */
+		#body #body_p1 {
+			text-align: center;
+			font-size: 36px;
+			font-weight: bolder;
+		}
+
+		#body #body_p1:after {
+			content: "————";
+		}
+
+		#body #body_p1:before {
+			content: "————";
+		}
+
+		/* 定义ul li */
+		ul li {
+			/* 首行缩进 */
+			text-indent: 2em;
+			/* 段落之间的间距 */
+			margin: 20px;
+		}
+
+		ul li a {
+			text-decoration: none;
+		}
+
+		ul li:nth-child(1) {
+			/* 定义上边线间距 */
+			margin-top: 40px;
+		}
+
+		/* 定义li鼠标悬浮样式 */
+		ul li:hover {
+			padding: 3px 0px 3px 0px;
+			font-size: 18px;
+			color: grey;
+			transition: font-size ease-in 0.5s;
+		}
+
+		/* 定义照片来源 */
+		#body_p0 {
+			text-align: center;
+			font-size: 36px;
+			font-weight: bolder;
+			margin-top: 50px;
+			margin-bottom: 40px;
+		}
+
+		#body #body_p0:after {
+			content: "————";
+		}
+
+		#body #body_p0:before {
+			content: "————";
+		}
+
+		/* 定义span标签 */
+		.start {
+			font-size: 18px;
+			font-weight: 900;
+		}
+
+		/* 定义图片边框宽高 */
+		.img {
+			width: 70%;
+			height: 600px;
+			border-radius: 30px;
+			position: relative;
+			left: 15%;
+			margin: 10px;
+		}
+
+
+		.img img {
+			width: 100%;
+			height: 100%;
+		}
+
+		#body_p2 {
+			text-align: center;
+			font-size: 12px;
+			text-indent: 2em;
+			font-family: "宋体";
+		}
+
+		/* 定义左边诗句 */
+		.body_left {
+			position: absolute;
+			left: 0%;
+			width: 15%;
+			text-align: center;
+		}
+
+		/* 定义右边诗句 */
+		.body_right {
+			position: absolute;
+			right: 0%;
+			width: 15%;
+			text-align: center;
+		}
+
+		.body_left,
+		.body_right {
+			top: 1100px;
+			font-size: 180px;
+			font-family: "楷体";
+			font-weight: bolder;
+			color: orangered;
+		}
+	</style>
+	<link rel="stylesheet" href="public.css" />
+	<body>
+		<div id="float_top">
+			<!-- 上悬浮 -->
+		</div>
+		<div id="float_bottom">
+			<!-- 下悬浮 -->
+			版权_&copy;TangZhiYu所有
+		</div>
+		<div id="float_left">
+			<!-- 左悬浮 -->
+			>
+			< <div>
+					<a href="#body_p1">回到顶部</a>
+					<a href="">反馈</a>
+					<a href="">下载</a>
+					<a href="">客服</a>
+					<a href="#footer">回到底部</a>
+			</div>
+		</div>
+		<div id="float_right">
+			<!-- 右悬浮 -->
+			< <div>
+				<a href="#body_p1">回到顶部</a>
+				<a href="">反馈</a>
+				<a href="">下载</a>
+				<a href="">客服</a>
+				<a href="#footer">回到底部</a>
+		</div>
+		</div>
+		<!-- 定义导航栏 -->
+		<div id="headerNav">
+			<div id="headerNav1"></div>
+			<div id="headerNav2">
+
+				<div class="nav1">
+
+					<div>
+						<a href="yemian1_Start.html">首页</a>
+						<a href="yemian2LiShi.html">历史</a>
+						<a href="yemian3XiSu.html">习俗</a>
+						<a href="https://baike.baidu.com/item/%E6%98%A5%E8%8A%82%E7%B2%BE%E7%A5%9E/12652051">精神</a>
+						<a href="https://www.diyifanwen.com/fanwen/chunjie/17665313.html">故事</a>
+					</div>
+
+				</div>
+
+				<div class="nav2">
+
+					<div>
+						<a href="">资源</a>
+						<a href="https://www.bilibili.com/video/BV1pw411h7wn?t=10.7">荧光舞</a>
+						<a href="https://www.bilibili.com/video/BV11h4y1i7K6?t=2.1">财神到</a>
+						<a href="https://www.bilibili.com/video/BV1XkSoYLEKg?t=1.8">花间梦</a>
+						<a href="https://www.bilibili.com/video/BV1Rr4y1S7yw?t=1.1">预选舞蹈</a>
+					</div>
+
+				</div>
+
+				<div class="nav3">
+				
+					<div>
+						<a href="">招聘中心</a>
+					</div>
+				
+				</div>
+				
+				<div class="nav4">
+				
+					<div>
+						<a href="">官网</a>
+					</div>
+				
+				</div>
+
+				<div class="nav5">
+
+					<div>
+						<a href="">个人中心</a>
+						<a href="yemian4denglu.html">登录</a>
+						<a href="yemian5zhuce.html">注册</a>
+						<a href="">帮助</a>
+						<a href="">反馈</a>
+					</div>
+
+				</div>
+
+				<div class="nav6">
+
+					<div>
+
+					</div>
+
+				</div>
+
+
+
+			</div>
+
+
+			<div id="body">
+				<div class="body_left">玉帛朝元万国同</div>
+				<div class="body_right">衮旒南面对春风</div>
+				<p id="body_p1">元旦的历史由来</p>
+				<hr width="80%" align="center" size="1px" color="black" />
+				<ul>
+					<li><span class="start">中国古代元旦</span>：“元旦” 一词最早出现于《晋书》。传说三皇五帝之一的颛顼以孟夏正月为元，正月初一为元旦
+						。尧舜时期，人们把尧死后，舜帝祭祀天地和先帝尧的那一天当作一年的开始之日，称正月初一为
+						“元旦” 或
+						“元正”。在汉武帝太初元年以前，正月的时间随朝代更替而变化，夏代以正月初一为元旦，商代以十二月初一为元旦，周代以十一月初一为元旦，秦代以十月初一为元旦，自汉武帝后，才又以正月初一为元旦，一直沿用到清朝末年。
+					</li>
+					<li>
+						<span class="start">近现代元旦</span>：1912 年，中华民国决定使用公历，并规定阳历 1 月 1 日为 “新年”，但当时不称 “元旦”。1949 年 9 月 27
+						日，第一届中国人民政治协商会议决定采用公元纪年法，将公历 1 月 1 日定为 “元旦”，农历正月初一改为 “春节”， 元旦成为全国性的法定节日。
+					</li>
+					<li>
+						<span class="start">西方元旦</span>：大约公元前五万年左右，古埃及人发现尼罗河泛滥时间有规律，且尼罗河初涨潮头到开罗城附近时，太阳与天狼星同时从地平线升起，便把
+						这一天定为一年的开始，这是元旦最早的由来。
+					</li>
+				</ul>
+				<p id="body_p0">元旦相关照片</p>
+
+				<hr width="80%" align="center" size="1px" color="black" />
+
+				<ul>
+					<li><a href="http://mp.weixin.qq.com/s?__biz=Mzg2OTc0MDU0Ng==&mid=2247491865&idx=6&sn=0c1fbb492ded55f4a6717ca53eba4b28&scene=0">1961 年元旦 “新年老人” 在北京市少年宫</a>新华社记者谢琍拍摄，“新年老人” 祝小朋友们新年天天向上.</li>
+					<li><a href="http://mp.weixin.qq.com/s?__biz=Mzg2OTc0MDU0Ng==&mid=2247491865&idx=6&sn=0c1fbb492ded55f4a6717ca53eba4b28&scene=0">1953 年元旦市民到北京市劳动人民文化宫游园</a>柯善文拍摄，展现当时市民庆祝元旦的场景.</li>
+					<li><a href="http://mp.weixin.qq.com/s?__biz=Mzg2OTc0MDU0Ng==&mid=2247491865&idx=6&sn=0c1fbb492ded55f4a6717ca53eba4b28&scene=0">1995 年元旦清晨 10 多万群众在天安门广场观看升旗仪式</a>新华社记者唐召明拍摄，众多群众齐聚天安门广场庆祝元旦.</li>
+				</ul>
+				<div class="img">
+					<img src="img/2.1.jpeg" alt="" />
+				</div>
+				<p id="body_p2">元旦，“新年老人”来到了北京市少年宫，他对小朋友们说：祝你们新年里天天向上。（1961年1月1日发）新华社记者 谢琍/摄</p>
+
+				<div class="img">
+					<img src="img/2.2.jpeg" alt="" />
+				</div>
+				<p id="body_p2">1953年元旦，市民们穿着整洁的衣服到北京市劳动人民文化宫里去游园。柯善文/摄</p>
+
+				<div class="img">
+					<img src="img/2.3.jpeg" alt="" />
+				</div>
+				<p id="body_p2">北京市少年宫在1956年元旦开幕。科学技术部生物室的小科学家们在解剖家兔。新华社记者 安康/摄</p>
+
+				<div class="img">
+					<img src="img/2.1.jpeg" alt="" />
+				</div>
+				<p id="body_p2">1960年元旦，北京市劳动人民文化宫为游人们演出了武术、高跷、杂技和曲艺等具有民族形式的文娱节目。黄景达/摄</p>
+				<p id="footer"></p>
+				
+
+			</div>
+	</body>
+</html>
